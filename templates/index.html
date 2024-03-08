@@ -1,21 +1,67 @@
 {%extends 'base.html'%}
-{%block title%}Home{%endblock%}
+{%block title%}Michael Moreno | Developer{%endblock%}
 {%block content%}
+    <section class="hero align-items-stretch">
+        <div class="container text-center my-1">
+            <div class="profile">
+                <img class="profile-picture" src="{{url_for('static',filename = 'images/' + data.images['profile picture']) }}" class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
+                <h1> {{data['first name']}}  {{data['last name']}} </h1>
+                <h2> {{data.description['short description']}} </h2>
+            </div>
+            <div class="profile-inferior">
+                <img class="profile-inferior-img img-fluid" src="../static/images/dev.svg" alt="Desarrollador trabajando" >
+            </div>
+        </div>
+    </section>
 
-    <div class="container text-center my-5">
-        <div class="container">
-            <img src="{{url_for('static',filename = 'images/' + data.images['profile picture']) }}" class="rounded-circle" style="width: 200px; height: 200px; object-fit: cover;">
-            <h1> {{data['first name']}}  {{data['last name']}} </h1>
-            <p> {{data.description['short description']}} </p>
+    <section class="about-me dark-section">
+        <div class="conteiner">
+            <h2 class="title-section">About Me</h2>
+            <p class="text-section"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum repellat autem, qui ratione fugiat ex eaque tenetur aperiam optio sed a consectetur sint. Aut eligendi saepe deleniti eius repellat facere.</p>
         </div>
-        <div class="container mt-5">
-            <ul class="list-group">
-                <li class="list-group-item list-group-item-action"> Email : {{data.contact['email']}} </li>
-                <li class="list-group-item list-group-item-action"> Phone : {{data.contact['phone']}} </li>
-            </ul>
+    </section>
+
+    <section class="experience clear-section">
+        <div class="container text-center">
+            <div class="row">
+
+                <!-- Desarrollo -->
+                <div class="column col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experience-title"> Desarrollo </p>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore quas magni </p>
+                    <div class="badges-conteiner">
+                        <span class="badge text-bg-primary">HTML</span>
+                        <span class="badge text-bg-primary">CSS</span>
+                        <span class="badge text-bg-primary">Python</span>
+                    </div>
+                </div>
+                <!-- Articulos -->
+                <div class="column col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experience-title"> Articulos </p>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore quas magni </p>
+                    <div class="badges-conteiner">
+                        <span class="badge text-bg-primary">Write</span>
+                        <span class="badge text-bg-primary">Edit</span>
+                        <span class="badge text-bg-primary">Blogs</span>
+                    </div>
+                </div>
+                <!-- Estudiante -->
+                <div class="column col-12 col-md-4">
+                    <i class="bi bi-laptop"></i>
+                    <p class="experience-title"> Student </p>
+                    <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad labore quas magni </p>
+                    <div class="badges-conteiner">
+                        <span class="badge text-bg-primary">UNRC</span>
+                        <span class="badge text-bg-primary">IPET 26</span>
+                    </div>
+                </div>
+                
+            </div>
         </div>
-    </div>
-    <div class="container">
+    </section>
+       <!-- <div class="container">
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <h2> About me: </h2>
             <p>{{ data.description['long description'] }}</p>
@@ -50,6 +96,6 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     
 {%endblock%}

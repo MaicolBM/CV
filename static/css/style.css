@@ -1,0 +1,126 @@
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+
+}
+
+.title-section {
+    font-size: 2rem;
+    padding: 15px 0;
+    font-family: 'Rubik Dirt',cursive;
+}
+
+.text-section {
+    font-size: 1.2rem;
+}
+
+.dark-section{
+    color: white;
+    background-color: #1b1b32;
+}
+
+.clear-section{
+    color: black;
+    background-color: white;
+}
+
+.about-me {
+    height: 500px; 
+    padding: 10px;
+}
+
+.about-me .conteiner {
+    max-width: 600px; 
+    text-align: center;
+}
+
+
+/* Seccion Perfil */
+.hero {
+    background-color: #f5f6f7 ;
+    min-height: 450px;
+    text-align: center;
+}
+
+.profile {
+    padding: 3rem;
+}
+
+.profile-picture {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.profile h2 {
+    font-size: 1.5rem;
+    color: #615151 ;
+}
+
+h1 {
+   font-size: 2.5rem;
+   font-family: "Rubik Dirt", cursive; 
+}
+
+/* Experience */
+
+.experience {
+    padding: 40px 40px 60px 40px;
+}
+
+.experience .column{
+    padding: 20px;
+    border: 2px solid #8080804d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    transition: all 0.2s ease-in;
+}
+
+.experience .column:hover {
+    color: white;
+    background-color: #1b1b32;
+}
+
+
+
+.experience-title{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.badges-conteiner {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.badge {
+    margin: 5px;
+}
+
+.experience i {
+    font-size: 2.5rem;
+    color: #7ade30;
+    background-color: #0a0a23;
+    padding:  8px 19px;
+    border-radius: 50%;
+}
+
+
+
+@media screen and (min-width: 700px) {
+    .profile-inferior-img {
+        max-width: 600px;
+
+    }
+}
