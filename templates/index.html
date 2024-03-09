@@ -1,6 +1,7 @@
 {%extends 'base.html'%}
 {%block title%}Michael Moreno | Developer{%endblock%}
 {%block content%}
+    <!-- Profile -->
     <section class="hero align-items-stretch">
         <div class="container text-center my-1">
             <div class="profile">
@@ -14,14 +15,75 @@
         </div>
     </section>
 
-    <section class="about-me dark-section">
+    <!-- About me -->
+    <section id="about-me" class="about-me dark-section">
         <div class="conteiner">
             <h2 class="title-section">About Me</h2>
             <p class="text-section"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum repellat autem, qui ratione fugiat ex eaque tenetur aperiam optio sed a consectetur sint. Aut eligendi saepe deleniti eius repellat facere.</p>
         </div>
     </section>
 
-    <section class="experience clear-section">
+    <!-- Projects -->
+    <section id="projects" class="projects clear-section d-flex flex-column">
+        <h2 class="title-section dark-text"> My proyects  </h2>
+        <h3 class="description-section"> This some proyects </h3>
+        <!-- Galeria -->
+        <div class="container text-center projects-container">
+            <div class="row">
+                <!-- Proyect 1 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="../static/images/project1.png" alt="Proyect 1">
+                        <div class="overlay">
+                            <p>Proyect 1</p>
+                            <div class="container-icons">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> 
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyect 2 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="../static/images/dev.svg" alt="Proyect 1">
+                        <div class="overlay">
+                            <p>Proyect 2</p>
+                            <div class="container-icons">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> 
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Proyect 3 -->
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="project">
+                        <img src="../static/images/project1.png" alt="Proyect 1">
+                        <div class="overlay">
+                            <p>Proyect 1</p>
+                            <div class="container-icons">
+                                <a href="https://github.com/" target="_blank" rel="noopener noreferrer"> 
+                                    <i class="bi bi-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+        <button type="button" class="btn btn-info">
+            Some Projects
+            <i class="bi bi-arrow-right-circle-fill"></i>
+        </button>
+        </a>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="experience clear-section">
         <div class="container text-center">
             <div class="row">
 
@@ -61,7 +123,139 @@
             </div>
         </div>
     </section>
-       <!-- <div class="container">
+
+    <!-- Articles -->
+    <section class="article justify-content-start">
+        <h2 class="title-section dark-text">Articles</h2>
+        <div class="card">
+            <div class="card-header">
+              Most recents
+            </div>
+            <ul class="list-group list-group-flush">
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Article Example</li>
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Article Example 2</li>
+              </a>
+              <a href="" target="_blank" rel="noopener noreferrer">
+                <li class="list-group-item">Article Example 3</li>
+              </a>
+            </ul>
+        </div>
+
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+            <button type="button" class="btn btn-info">
+                Some Articles
+                <i class="bi bi-arrow-right-circle-fill"></i>
+            </button>
+            </a>
+
+    </section>
+
+    <!-- Testimony -->
+    <section class="testimony clear-section">
+        <h2 class="title-section">Testimony</h2>
+        <h3 class="description-section"> Some testimonys </h3>
+        <!-- Carousel --> 
+        <div id="testimony-carousel" class="carousel carousel-dark slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container">
+                    <img class="testimony-image rounded-circle" src="../static/images/dev.svg">
+                    <p class="testimony-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                    <div class="testimony-info">
+                        <p class="client"> Michael </p>
+                        <p class="carge"> Developer Profesional </p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img class="testimony-image rounded-circle" src="../static/images/dev.svg">
+                    <p class="testimony-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                    <div class="testimony-info">
+                        <p class="client"> Michael </p>
+                        <p class="carge"> Developer Profesional </p>
+                    </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="container">
+                    <img class="testimony-image rounded-circle" src="../static/images/dev.svg">
+                    <p class="testimony-text"> Lorem, ipsum dolor sit amet consectetur adipisicing elit.  </p>
+                    <div class="testimony-info">
+                        <p class="client"> Michael </p>
+                        <p class="carge"> Developer Profesional </p>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimony-carousel" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimony-carousel" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact dark-section">
+        <div class="container">
+            <div class="container text-center rectangle d-flex justify-content-evenly">
+                <div class="row">
+                    <div class="col-12 col-md-4 title-section">
+                        Hablemos
+                    </div>
+                    <div class="col-12 col-md-4 description">
+                        Bienvenido a mi portafolio y tambien mi primer proyecto personal
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <a href="mailto:maaicolmorenooo@gmail.com">
+                            <button type="button">
+                                Contact
+                                <i class="bi bi-envelope-check-fill"></i>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+     <footer class="dark-section d-flex flex-column align-items-center justify-content-center">
+        <img class="footer-logo" src="../static/images/brief.svg" alt="Logo de portafolio" >
+        <p class="footer-text text-center"> Hello World! <br> Hi </p>
+        <div class="social-icons d-flex flex-wrap align-items-center justify-content-center">
+          <a href="twiter" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-twitter"></i>
+          </a>
+          <a href="github" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a> 
+          <a href="linkedin" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-linkedin"></i>
+          </a>
+          <a href="instagram" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="mailto:maaicolmorenooo@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>     
+        </div>
+        <div class="author"> Create for Michael Moreno (2024) &#169;</div>
+
+     </footer>
+       
+
+    
+    
+    
+    <!-- <div class="container">
         <div class="container shadow p-3 mb-5 bg-white rounded">
             <h2> About me: </h2>
             <p>{{ data.description['long description'] }}</p>
