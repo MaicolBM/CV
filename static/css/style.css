@@ -29,6 +29,15 @@ h1 {
 .btn-info {
     font-size: 1.1rem;
     margin: 20px;
+    background-color: #1b1b32;
+    color: white;
+    border: 1px solid #1b1b32;
+}
+
+.btn-info:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
 }
 
 .dark-text {
@@ -91,7 +100,7 @@ h1 {
 /* Experience */
 
 .experience {
-    padding: 40px 40px 60px 40px;
+    padding: 40px 40px 100px 40px;
 }
 
 .experience .column{
@@ -183,6 +192,7 @@ h1 {
 
 .overlay .container-icons {
     display: flex;
+    justify-content: center;
 
 }
 
@@ -192,77 +202,6 @@ h1 {
     margin: 10px;
 }
 
-/* Articulos */
-
-.article {
-    min-height: 500px;
-    padding: 30px;
-}
-
-.article .card {
-    width: 80%;
-    max-width: 600px;
-    margin: 20px; 
-}
-
-.article .card-header {
-    font-weight: bold;
-}
-
-/* Testimoy */
-
-.testimony {
-    padding: 40px 40px 80px 40px ;
-}
-
-.testimony .carousel {
-    max-width: 800px;
-}
-
-.carousel-item {
-    height: 500px;
-
-}
-
-.carousel-item .container {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.testimony-image {
-    height: 150px;
-    width: 150px;
-    margin: 10px 10px 20px 10px ;
-}
-
-.testimony-text {
-    max-width: 70%;
-    font-size: 20px;
-    text-align: center;
-    font-family: "Share Tech Mono", monospace;
-}
-
-.testimony-info {
-    font-weight: bold;
-    text-align: center;
-}
-
-.testimony-info p {
-    margin-bottom: 0;
-}
-
-.testimony-footer .client {
-    font-size: 1.2rem;
-}
-
-.testimony-info .carge {
-    font-size: 0.9rem;
-    color: #656060;
-}
 
 /* Contact */
 
@@ -319,7 +258,7 @@ h1 {
 /* Footer */
 
 footer {
-    min-height: 500px;
+    min-height: 200px;
 }
 
 .author {
@@ -374,15 +313,6 @@ footer {
     color: black;
 }
 
-@media screen and (max-width: 800px){
-    .testimony-image {
-        height: 120px;
-        width: 120px;
-    }
-    .testimony-text {
-        font-size: 18px;
-    }
-}
 
 @media screen and (min-width: 700px) {
     .profile-inferior-img {
