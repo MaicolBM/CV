@@ -11,6 +11,6 @@ data = {
 
     },
     "images" : {
-        "profile picture" : "profile.jpg"
+        "profile picture" : "profile.png"
     }
 }
